@@ -1,0 +1,225 @@
+<html class=" js no-touch csstransforms csstransforms3d csstransitions"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login - BOWASCO</title>
+
+
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,600italic,400italic" rel="stylesheet"
+          type="text/css">
+    <!-- Vendor -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Local -->
+    <link rel="stylesheet" href="{{ asset('bowasco/main.c62734a2a826.css') }}">
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="{{ asset('bowasco/ie9.962e518cff2c.css') }}"><![endif]-->
+
+
+</head>
+<body class="white">
+<div id="site-container">
+    <header>
+
+
+        <nav>
+            <div class="site-logo">
+                <a href="/" class="">
+                    <figure class="logo-mark"></figure>
+                    <br></a>
+            </div>
+            <div class="nav-icon-links">
+                <div class="mobile-nav-menu">
+                    <a href="" class="nav-drop">
+                        <figure class="mobile-nav"></figure>
+                        Menu
+                    </a>
+                </div>
+                <a href="#" class="search-nav-mobile hidden-md hidden-lg hidden-xl">
+                    <img src="https://d2stpqwf2hevny.cloudfront.net/static/img/search-mobile.b4ef966b7720.png">
+                </a>
+
+
+                <a id="join-box-link" href="#" data-trigger-join="true"><img
+                            src="https://d2stpqwf2hevny.cloudfront.net/static/img/join.f4dd1f0205e1.png"><span>Join <i
+                                class="glyphicon glyphicon-chevron-down link-accent"></i></span></a>
+                <a id="sign-in-link" href="/login/"><img
+                            src="https://d2stpqwf2hevny.cloudfront.net/static/img/join.f4dd1f0205e1.png"><span>Sign In</span></a>
+
+            </div>
+            <div class="nav-tab">
+                <a href="/explore/" class="">
+                    <img src="https://d2stpqwf2hevny.cloudfront.net/static/img/explore.2599dd701379.png">
+                    Home <span>Dashboard</span>
+                </a>
+            </div>
+            <div class="nav-tab">
+                <a href="/shop/" class="">
+                    <img src="https://d2stpqwf2hevny.cloudfront.net/static/img/shop.92638de841a6.png">
+                    Dairy & Sales <span>Milk Management</span>
+                </a>
+            </div>
+            <div class="nav-tab">
+                <a href="/designers/" class="">
+                    <img src="https://d2stpqwf2hevny.cloudfront.net/static/img/find.58796c57c436.png">
+                    People <span>Affiliates & Processors</span>
+                </a>
+            </div>
+            <div class="nav-tab">
+                <a href="/plan/" class="">
+                    <img src="https://d2stpqwf2hevny.cloudfront.net/static/img/plan.1839e19f4280.png">
+                    Accounting <span>Expense & Reporting</span>
+                </a>
+            </div>
+            <div class="nav-tab">
+                <a href="/series/" class="">
+                    <img src="https://d2stpqwf2hevny.cloudfront.net/static/img/watch.546e08dce3c6.png">
+                    Staff <span>PayRoll</span>
+                </a>
+            </div>
+            <div class="nav-search" style="">
+                <a href="#"><img src="https://d2stpqwf2hevny.cloudfront.net/static/img/search.435d468cab48.png"></a>
+            </div>
+
+            <div class="nav-tab mobile-logout">
+                <a id="logout-link" href="/login/">
+                    <img src="https://d2stpqwf2hevny.cloudfront.net/static/img/login.fd09bc8095af.png">
+                    Login
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+    <div class="modal fade" id="additional-details" tabindex="-1" role="dialog"
+         aria-labelledby="additional-details-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="col-lg-12">
+                        <h3 class="modal-title text-center" id="additional-details-modal">
+                            Additional Details
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </h3>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p id="details-content"></p>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <div id="content-container" class="">
+        <div id="join-box" class="callout">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>What kind of account are <br class="visible-xs">we<br class="hidden-xs"> setting up for you?
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 right-border">
+                    <h3>User Account</h3>
+                    <p>I am a normal user tasked with daya to day management of the Co-operatives activities.</p>
+                    <a href="/signup/enthusiast" class="button">GET STARTED</a>
+                </div>
+                <div class="col-md-6">
+                    <h3>Manager Account</h3>
+                    <p>I am a supervisor tasked with the Co-operatives Administrative tasks eg. Managing users, running reports.</p>
+                    <a href="/trade_direct/apply/" class="button">GET STARTED</a>
+                </div>
+            </div>
+            <div class="notch border-notch"></div>
+            <div class="notch"></div>
+        </div>
+
+        <div id="search-box" class="container" style="left: 944.172px; display: none;">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <input id="search-query" name="search-query" placeholder="Enter a search term...">
+                    <button class="btn btn-orange" id="search-box-button">GO</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div id="search-box-results">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block body %}
+
+        {% endblock %}
+    </div>
+
+    <footer id="footer">
+
+
+        <!--footer-->
+        <div class="row footer-bottom">
+            <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                <div class="copyright no-mobile"><p></p></div>
+            </div>
+            <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                <div class="copyright no-mobile"><p>© 2017. Bowasco</p></div>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+</div>
+<div id="modal-wrapper" class="">
+    <div class="modal">
+        <div class="modal-body">
+        </div>
+    </div>
+</div>
+<div id="login-modal" class="modal fade" tabindex="-1" role="dialog"></div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.1/jquery.timeago.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="{{ asset('bowasco/js/jquery.tagsinput.577e03b6b543.js') }}"></script>
+<script src="{{ asset('bowasco/js/isMobile.89621c9f2ff4.js') }}"></script>
+<script src="{{ asset('bowasco/js/tap.117cff487c5d.js') }}"></script>
+<script src="{{ asset('bowasco/js/flickity.e5eea29d461f.js') }}"></script>
+<script src="{{ asset('bowasco/js/popover.a922ee1adb49.js') }}"></script>
+<script src="{{ asset('bowasco/js/jquery.placeholders.f09e70f2b84b.js') }}"></script>
+<script src="{{ asset('bowasco/js/toggle-layout.660560374ac1.js') }}"></script>
+<script src="{{ asset('bowasco/js/main.60a55f4d89ba.js') }}"></script>
+<script src="{{ asset('bowasco/js/modal.8f7528492f00.js') }}"></script>
+<script src="{{ asset('bowasco/js/hacks.8b102b8d7d98.js') }}"></script>
+<script src="{{ asset('bowasco/js/jquery.mask.min.27d036bfa66c.js') }}"></script>
+
+
+<script src="{{ asset('bowasco/js/main.bundle.ad860898c1d5.js') }}"></script>
+
+
+
+<script type="text/javascript">
+    $(document).on('click', '.banner-additional-details', function (e) {
+        var link = $(this);
+        var details = link.data("details");
+        $("#details-content").html(details);
+    });
+</script>
+<script>
+    $(function () {
+        $('input, textarea').placeholder({
+            customClass: 'jquery-placeholder'
+        });
+    });
+</script>
+
+</body>
+</html>

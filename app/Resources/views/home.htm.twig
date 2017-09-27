@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div id="auth-page" class="container">
+        <div class="row bootstrap-row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-7 login-container">
+                <div class="row bootstrap-row">
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                        <form class="new-form text-left block" method="post" action="/login/">
+                            <div class="row bootstrap-row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <h1>Sign In</h1>
+                                </div>
+                            </div>
+
+
+                            <div class="row bootstrap-row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <label>Email Address</label>
+                                    <input type="email" name="login" id="id_login">
+                                </div>
+                            </div>
+
+                            <div class="row bootstrap-row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <label>Password</label>
+                                    <input type="password" name="password" id="id_password">
+                                    <a class="forgot-password" href="/password/reset/">Forgot password?</a>
+                                </div>
+                            </div>
+
+                            <div class="row bootstrap-row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                    <button type="submit" class="button primary">SIGN IN</button>
+                                </div>
+                            </div>
+
+                            <div class="row bootstrap-row text-center hidden-xs">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <br>
+                                    Don't have an account yet? <a href="#" data-trigger-join="true">Request One</a>.
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 social-logins">
+                        <div class="row bootstrap-row or-row top-border">
+                            <div>OR</div>
+                        </div>
+
+                        <a href="{{ path('manager_login') }}" class="social-button button twitter">
+                            Manager Sign In</a>
+
+                        <a href="{{ path('admin-login') }}" class="social-button button facebook">
+                            Administrator Sign In</a>
+
+                    </div>
+                    <div class="visible-xs col-xs-12">
+                        <br>
+                        Don't have an account yet? <a href="#" data-trigger-join="true">Request One</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
